@@ -2,6 +2,7 @@ package com.example.nailedit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,6 +32,14 @@ public class TipCalc extends AppCompatActivity {
                 totalCost = (percentint / 100) * setCostint;
                 DecimalFormat currency = new DecimalFormat("$###,###.##");
                 result.setText("Tip amount: " + currency.format(totalCost));
+            }
+        });
+
+        Button home = findViewById(R.id.btHome2);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(TipCalc.this, NailHub.class));
             }
         });
     }}

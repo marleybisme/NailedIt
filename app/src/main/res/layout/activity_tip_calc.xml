@@ -102,7 +102,7 @@
         app:layout_constraintVertical_bias="0.64" />
 
     <Button
-        android:id="@+id/btHome"
+        android:id="@+id/btHome2"
         android:layout_width="168dp"
         android:layout_height="62dp"
         android:backgroundTint="#E3CBE6"
