@@ -31,68 +31,82 @@
         app:layout_constraintVertical_bias="0.965"
         app:srcCompat="@drawable/grouplogo" />
 
-    <Button
-        android:id="@+id/btHubQuiz"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:backgroundTint="#85DBD9"
-        android:text="@string/tvHubQuiz"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        app:cornerRadius="30dp"
+    <GridLayout
+        android:layout_width="300dp"
+        android:layout_height="293dp"
+        android:columnCount="2"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.373" />
+        app:layout_constraintVertical_bias="0.501">
 
-    <Button
-        android:id="@+id/btHubInspo"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:backgroundTint="#85DBD9"
-        android:text="@string/tvHubInspo"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        app:cornerRadius="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.67" />
+        <Button
+            android:id="@+id/btHubQuiz"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:backgroundTint="#85DBD9"
+            android:text="@string/tvHubQuiz"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:cornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.085"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.373" />
 
-    <Button
-        android:id="@+id/btHubTip"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:backgroundTint="#85DBD9"
-        android:text="@string/tvHubTip"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:cornerRadius="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.914"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.67" />
+        <Button
+            android:id="@+id/btHubInspo"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:backgroundTint="#85DBD9"
+            android:text="@string/tvHubInspo"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:cornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.085"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.67" />
 
-    <Button
-        android:id="@+id/btHubBook"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:backgroundTint="#85DBD9"
-        android:text="@string/tvHubBook"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        app:cornerRadius="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.914"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.373" />
+        <Button
+            android:id="@+id/btHubTip"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:backgroundTint="#85DBD9"
+            android:text="@string/tvHubTip"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:cornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.914"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.67" />
+
+        <Button
+            android:id="@+id/btHubBook"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_row="0"
+            android:backgroundTint="#85DBD9"
+            android:text="@string/tvHubBook"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:cornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.914"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.373" />
+    </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

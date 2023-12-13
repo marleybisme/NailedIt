@@ -13,6 +13,7 @@ public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+//        Project Requirement: Form for input
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 

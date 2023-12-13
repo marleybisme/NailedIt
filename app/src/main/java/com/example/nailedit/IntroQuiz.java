@@ -15,10 +15,18 @@ public class IntroQuiz extends AppCompatActivity {
         setContentView(R.layout.activity_intro_quiz);
 
         Button home = findViewById(R.id.btHome);
+        Button begin = findViewById(R.id.btBegin);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(IntroQuiz.this, NailHub.class));
+            }
+        });
+
+        begin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(IntroQuiz.this, Quiz.class));
             }
         });
     }
