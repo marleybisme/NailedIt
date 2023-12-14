@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -155,6 +157,12 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener{
                 .setPositiveButton("Back to Nail Hub", (dialogInterface, i) -> restartQuiz())
                 .setCancelable(false)
                 .show();
+
+        final SharedPreferences sharedPref =
+                PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString("key1", style);
+        editor.commit();
     }
 
     void restartQuiz(){
